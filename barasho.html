@@ -1,0 +1,224 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <link rel="icon" type="image/jpg" href="images/download.jpg">
+    <title> my first website</title>
+</head>
+<body>
+
+    <h1><span style="background-color: blue;">h1 heading</span> </h1>
+    <hr>
+    <h2><div style="background-color: brown;"> this is h2 heading</div></h2>
+    <pre> 
+        <div style="background-color: brown;">
+        this is<b> bold</b> pragraph
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Inventore <i>normal text</i>, 
+        sed explicabo <u>underlined text</u> obcaecati, 
+        iusto nihil ipsa <del> deleted text</del> ea? 
+        Sapiente cupiditate <big>big</big> dolor? Velit,
+         assumenda!<small> this is small!</small>
+         Lorem ipsum dolor sit <sub>subscript </sub>consectetur adipisicing elit.
+         Lorem ipsum dolor sit<sup> superscript</sup> consectetur adipisicing elit
+         Lorem ipsum dolor sit<tt> monospaced</tt> consectetur adipisicing elit
+         Lorem ipsum dolor sit <mark style="background-color: blue;">marked text </mark>consectetur adipisicing elit
+         <!-- pre is better p-->
+        </div>
+        
+         </pre>
+         
+         <a href="https://www.google.com/" target="_blank" title="goes to google">
+            click here
+        </a>
+            <br>
+            <a href="lyrics.html">
+            lyrics page
+        </a>
+    </a>
+    <br>
+   
+        <br>
+        <a href="mailto:abdirahim4ever@gmail.com">
+            email me
+        </a>
+        
+         
+    <!-- unordered list-->
+    <ul>
+        <h1>grocerries</h1>
+        <li>milk</li>
+        <li>eggs</li>
+        <li>bread</li>
+        <li>coffee supplies</li>
+        <ul>
+            <li>coffee beans</li>
+            <li>creamer</li>
+            <li>sugar</li>
+        </ul>
+        <!--ordered list-->
+        
+       
+    </ul>
+     <!--ordered list-->
+     <h4>this is ordered list</h4>
+<ol>
+    <li>wake up early</li>
+    <li>go to mosque</li>
+    <li>come to the home</li>
+</ol>
+><h3>this is distrubution list</h3>
+<dl style="background-color: greenyellow;">
+<dt>dragon</dt>
+<dd>a mythical monster resembling a giant reptile, sometimes shown as having wings</dd>
+<dt>bbc</dt>
+<dd>he British Broadcasting Corporation is a British public service broadcaster headquartered </dd>
+<dt>voa</dt>
+<dd>Voice of America is the state-owned news network</dd>
+
+</dl>
+ <!--creating a button which returns another sentence-->
+<a >
+    <button onclick="dosomething()" style="font-size: 25;background-color:grey;color: lightblue;border-radius: 5px;">click me</button>
+</a>
+<p id="welcoming">wecome to jafa</p>
+<script>
+    function dosomething(){
+document.getElementById("welcoming").innerHTML="teaching java"
+    }
+</script>
+<!--creating a table-->
+<h3>store hours</h3>
+    <table border="1">
+        <tr align="center" style="background-color: blue;">
+        <th width="100">saturday</th>
+        <th width="100">sunday</th>
+        <th width="100">monday</th>
+        <th width="100">Tuesday</th>
+        <th width="100">wednesday</th>
+        <th width="100">Thursday</th>
+        <th width="100">friday</th>
+    </tr>
+<tr align="center" style="background-color: aliceblueS;">
+       <td>6-5</td>
+       <td>6-5</td>
+       <td>6-5</td>
+       <td>6-5</td>
+       <td>6-5</td>
+       <td>6-5</td>
+       <td>closed</td> <br>
+       
+       
+    </tr>
+    <tr>
+        <td>6-5</td>
+       <td>6-5</td>
+       <td>6-5</td>
+       <td>6-5</td>
+       <td>6-5</td>
+       <td>6-5</td>
+    </tr>
+    </table>
+
+ <!---greating forms-->
+ <h3>registration form</h3>
+ <form action="index.php" method="post" enctype="multipart/form-data">
+     <label for="username">username</label>
+     <input type="text" id="username" placeholder="inter username" minlength="6" maxlength="25" required><br>
+    
+     
+     <label for="password">password</label>
+     <input type="password" id="password" placeholder="password here" minlength="6" maxlength="25" required><br>
+     
+     <label for="email">email</label>
+     <input type="email" id="email" placeholder="forexample@gmail.com" required><br>
+
+     <label for="phone">phone #:</label>
+     <input type="tell" id="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+
+     <label for="bdate">birth date:</label>
+     <input type="date" id="bdate" placeholder="birth date"><br>
+
+     <label for="quantity">quantity:</label>
+      <input type="number" id="quantity" min="0" value="1"><br>
+
+
+     <label for="title">title:</label>
+
+     <label for="ms">ms.</label>
+     <input type="radio" id="ms" value="ms" name="title">
+
+     <label for="mr">mr.</label>
+     <input type="radio" id="mr" value="mr" name="title">
+
+     <label for="phd">phd.</label>
+     <input type="radio" id="phd" value="phd" name="title"><br>
+
+    <!--creating drop down menu-->
+    <label for="payment">payment</label>
+    <select id="payment">
+
+    <option value="visa">visa</option>
+    <option value="evc">evc</option>
+    <option value="mastercard">mastercard</option><br>
+
+ </select><br>
+ <label for="subscribe">subscribe</label>
+ <input type="checkbox" id="subscribe"><br>
+
+
+ <label for="comment">comment</label>
+ <textarea id="comment" rows="3" cols="20"></textarea><br>
+ <!--creating file-->
+ <label for="file">file</label>
+ <input type="file" id="file" accept="image/png, image/jpeg"><br>
+
+     <input type="submit"><br>
+     <input type="reset">
+ </form>
+
+
+
+
+
+ <header style="background-color: mediumpurple;">
+    <h1>welcome to my first website</h1>
+    <a href="">Home</a>
+    <a href="">about</a>
+    <a href="">products</a>
+    <a href="">contact us</a>
+    <hr>
+       </header>
+       <main>
+    <h4>check out cool movies</h4>
+    <image src="images/html.png" alt="profile"></image>
+    <pre>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+        Minus quos quasi, rerum officia deleniti animi eaque, id, numquam 
+        sunt vel perspiciatis. Quaerat perspiciatis, quos quas ullam 
+        voluptatem earum voluptates. Porro.</pre>
+       </main>
+       <footer  style="background-color: mediumpurple;">
+    <hr>
+        author: Abdirahim
+        &copy; copy right reserved<br>
+        <small><a href="malito:abdirahim@gmail.com">abdirahim@gmail.com</a></small>
+
+
+<!-- this is how to style p-->
+*//*
+
+
+.odd{
+    color: brown;
+}
+.even{
+    color: blue;
+}
+*//* you can use by id
+#p1{
+
+
+
+</body>
+
+</html>

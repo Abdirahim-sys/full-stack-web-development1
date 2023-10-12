@@ -1,0 +1,34 @@
+#{
+    margin: o;
+
+}
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    padding: 10px;
+    align-items: center;
+    background: linear-gradient(135deg,#71b7e6,#9659b6);
+}
+.container{
+    max-width: 400px;
+    width: 100%;
+    background: #fff;
+    padding: 25px 35px;
+    position: relative;
+
+}
+.container .title{
+    font-size: 25pc;
+    font-weight: 400;
+    left: 0;
+    bottom: 0;
+.container.title ::before{
+    content: '';
+    height: 3pc;
+    position: absolute;
+    width: 30pc;
+    background: #9b599b;
+}
+
+}

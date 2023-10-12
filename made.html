@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #26b2c5;
+            box-shadow: 0px 0px 10px rgba(10, 10, 10, 0.2);
+        }
+        h1 {
+            font-size: 28px;
+            color: #333;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            text-align: left;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="date"],
+        input[type="tel"],
+        input[type="email"],
+        input[type="password"]
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        select {
+            height: 36px;
+        }
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        .gender-label {
+            display: inline-block;
+            margin-right: 15px;
+        }
+        .checkbox-label {
+            display: block;
+        }
+        .comment {
+            height: 100px;
+        }
+        .button-container {
+            text-align: center;
+        }
+        .submit-button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .submit-button:hover {
+            background-color: #0056b3;
+        }
+        .cancel-button {
+            background-color: #ccc;
+            color: #333;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .cancel-button:hover {
+            background-color: #999;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Student Registration Form</h1>
+        <form action="#" method="post">
+            <label for="fname"> fast Name</label>
+            <input type="text" id="name" name="name" required autofocus>
+
+            
+
+            <label for="birthdate">Birthdate</label>
+            <input type="date" id="birthdate" name="birthdate" required>
+
+            <label for="fatherName">Father's Name</label>
+            <input type="text" id="fatherName" name="fatherName" required>
+
+            <label for="fatherName">mothers's Name</label>
+            <input type="text" id="motherName" name="motherName" required>
+
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address" required>
+
+            <label>Gender</label>
+            <div class="gender-label">
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+            </div>
+            <div class="gender-label">
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Female</label>
+            </div>
+
+            <label for="faculty">Faculty</label>
+            <select id="faculty" name="faculty" required>
+                <option value="Computer Science">Science</option>
+                <option value="arts">Arts</option>
+                <option value="engineering">Engineering</option>
+            </select>
+
+            <label>Hobbies</label>
+            <div class="checkbox-label">
+                <input type="checkbox" id="reading" name="hobbies[]" value="reading">
+                <label for="reading">Reading</label>
+            </div>
+            <div class="checkbox-label">
+                <input type="checkbox" id="sports" name="hobbies[]" value="sports">
+                <label for="sports">Sports</label>
+            </div>
+            <div class="checkbox-label">
+                <input type="checkbox" id="music" name="hobbies[]" value="music">
+                <label for="music">Music</label>
+            </div>
+
+            <label for="comment">Comment</label>
+            <textarea id="comment" name="comment" class="comment"></textarea>
+
+            <!--creating file-->
+ <label for="file">file</label>
+
+ <div class="button-container">
+ <input type="file" id="file" accept="image/png, image/jpeg"><br>
+</div>
+
+            <div class="button-container">
+                <button type="submit" class="submit-button">Submit</button>
+                <button type="reset" class="cancel-button">Cancel</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

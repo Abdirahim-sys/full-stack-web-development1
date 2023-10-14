@@ -175,5 +175,10 @@ section .nav2{
 button{
   display: inline-block;
   text-align: center;
+  float: right;
   
+}
+submit-reset{
+  float: left;
+
 }
